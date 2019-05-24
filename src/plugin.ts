@@ -7,6 +7,8 @@ export class TextToSpeech implements ITTSPlugin {
 
     constructor(options: TTSOptions) {
         this.initialize(options);
+
+        console.log('Engine Inititialize');
     }
 
 
@@ -22,15 +24,15 @@ export class TextToSpeech implements ITTSPlugin {
         return TTS.openInstallTts();
     }
 
-    setPitch(options: { value: number }): Promise<{ value: boolean }> {
+    setPitch(options: { pitch: number }): Promise<{ value: boolean }> {
         return TTS.setPitch(options);
     }
 
-    setSpeechRate(options: { value: number }): Promise<{ value: boolean }> {
+    setSpeechRate(options: { rate: number }): Promise<{ value: boolean }> {
         return TTS.setSpeechRate(options);
     }
 
-    speak(options: { value: string }): Promise<{ value: boolean }> {
+    speak(options: { text: string }): Promise<{ value: boolean }> {
         return TTS.speak(options);
     }
 

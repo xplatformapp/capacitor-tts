@@ -14,11 +14,11 @@ export interface ITTSPlugin {
 
     checkLanguage(): Promise<{values: string[]}>
 
-    setPitch(options: { value: number }): Promise<{ value: boolean }>;
+    setPitch(options: { pitch: number }): Promise<{ value: boolean }>;
 
-    setSpeechRate(options: { value: number }): Promise<{ value: boolean }>;
+    setSpeechRate(options: { rate: number }): Promise<{ value: boolean }>;
 
-    speak(options: { value: string }): Promise<{ value: boolean }>;
+    speak(options: { text: string }): Promise<{ value: boolean }>;
 
     stop(): Promise<{ value: boolean }>;
 
@@ -45,11 +45,11 @@ export interface TTSOptions {
 
 export enum Local {
 
-    DEVICE = 0,
+    US = 0,
 
-    US = 1,
+    UK = 1,
 
-    UK = 2
+    FRANCE = 2
 }
 
 

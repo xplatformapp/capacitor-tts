@@ -1,5 +1,9 @@
 # Capacitor Text-To-Speech
 
+
+## Platform
+* Android
+
 ## Installation
 
 ```console
@@ -12,7 +16,7 @@ import { TextToSpeech, Local } from 'capacitor-tts';
 
 const tts = new TextToSpeech({
     local: Local.US,
-    rate: 1.0,
+    rate:  1.0,
     pitch: 1.0
 });
 
@@ -44,15 +48,15 @@ checkLanguage(): Promise<{values: string[]}>;
 ```
 Set voice pitch
 ```typescript
-setPitch(options: { value: number }): Promise<{ value: boolean }>;   
+setPitch(options: { pitch: number }): Promise<{ value: boolean }>;   
 ```
 Set talking speed
 ```typescript
-setSpeechRate(options: { value: number }): Promise<{ value: boolean }>;
+setSpeechRate(options: { rate: number }): Promise<{ value: boolean }>;
 ```
 Speak from text
 ```typescript
-speak(options: { value: string }): Promise<{ value: boolean }>;
+speak(options: { text: string }): Promise<{ value: boolean }>;
 ```
 Stop text to speech engine
 ```typescript
@@ -72,8 +76,8 @@ export interface TTSOptions {
 #### Enums
 ```typescript
 export enum Local {
-    DEVICE = 0,
-    US     = 1,
-    UK     = 2
+    US     = 0,
+    UK     = 1,
+    FRANCE = 2
 }
 ```

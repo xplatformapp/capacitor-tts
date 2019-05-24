@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\XPlatform\\ttsdemo\\node_modules\\capacitor-tts\\android\\build\\intermediates\\res\\merged\\release\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml",
+        "source": "C:\\Users\\Rahadur\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7ecdb3c115febce42001a49cbc4083b6\\res\\layout-sw600dp-v13\\mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\XPlatform\\ttsdemo\\node_modules\\capacitor-tts\\android\\build\\intermediates\\res\\merged\\release\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Rahadur\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7ecdb3c115febce42001a49cbc4083b6\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    }
+]
