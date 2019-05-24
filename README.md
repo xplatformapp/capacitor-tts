@@ -1,4 +1,4 @@
-# Capacitor Text-To-Speech
+# 🗣 Capacitor Text-To-Speech
 
 
 ## Platform
@@ -20,7 +20,7 @@ const tts = new TextToSpeech({
     pitch: 1.0
 });
 
-tts.speak({value: 'Text to speech'})
+tts.speak({text: 'Text to speech'})
     .then(res => {
         console.log(res);
     })
@@ -42,15 +42,15 @@ Open Installed text to speech activity
 ```typescript
 openInstallTts(): Promise<{value: null}>;
 ```
-Check available languages
+Check available languages default **Local.US**
 ```typescript
 checkLanguage(): Promise<{values: string[]}>;
 ```
-Set voice pitch
+Set voice pitch default **1.0**
 ```typescript
 setPitch(options: { pitch: number }): Promise<{ value: boolean }>;   
 ```
-Set talking speed
+Set talking speed default **1.0**
 ```typescript
 setSpeechRate(options: { rate: number }): Promise<{ value: boolean }>;
 ```
@@ -81,3 +81,22 @@ export enum Local {
     FRANCE = 2
 }
 ```
+
+
+## Contributing
+
+- 🌟 Star this repository
+- 📋 Open issue for feature requests
+
+
+## Roadmap
+ - [Capacitor Plugins](https://capacitor.ionicframework.com/docs/plugins/)
+
+ - [IOS](https://capacitor.ionicframework.com/docs/plugins/ios/)
+
+ - [Android](https://capacitor.ionicframework.com/docs/plugins/android/)
+
+
+## License
+
+Capacitor TextToSpeech is [MIT licensed](./LICENSE).
